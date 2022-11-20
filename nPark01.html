@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+  <style>
+    * {
+      font-family: '標楷體';
+    }
+
+    .navbar-brand {
+      font-size: 40px;
+      font-weight: 800;
+    }
+
+    .card-title {
+      font-size: xx-large;
+      font-weight: 500;
+    }
+  </style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg  mx-3 py-0 border-bottom ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">台灣國家公園導覽</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+            aria-controls="collapseExample">
+            <a class="nav-link active fw-bolder" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user
+      activates the relevant trigger.
+    </div>
+  </div>
+
+
+  <div class="container-fluid text-center mt-3">
+    <div class="row mx-1">
+      <div class="col">
+        <img src="./image/regional-specialties-img02.jpg" class="d-block w-100" alt="花東海岸">
+      </div>
+      <div class="col">
+        <img src="./image/800_5954db1c3a7b1b67864affc50556a197.jpg" class="d-block w-100" alt="澎湖玄武">
+      </div>
+    </div>
+
+    <div class="container-fluid my-4">
+      <div class="col-12">
+        <img src="./image/tjnp.jpg" class="d-block w-100" alt="台灣國家公園首頁">
+      </div>
+    </div>
+
+    <div class="row mx-1 my-4">
+
+      <div class="col">
+        <img src="./image/pic_187_10.jpg" class="d-block w-100" alt="金門花崗">
+      </div>
+      <div class="col">
+        <img src="./image/1414242815.jpg" class="d-block w-100" alt="雪霸聖陵">
+      </div>
+    </div>
+
+    <div class="container-fluid pt-4">
+      <div class="row ">
+        <div class="col-sm-12">
+          <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">國家公園</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">景觀簡介</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">服務管理處</button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <div class="row mt-3 mb-5">
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0">
+
+
+                  </div>
+                </div>
+
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/4817089343_84440838b2_b.jpg" class="card-img-top" alt="墾丁國家公園">
+                    <div class="card-body">
+                      <h4 class="card-title ">墾丁國家公園</h4>
+                      <p class="card-text text-start">
+                        成立時間：民國71年9月<br>
+                        涵蓋面積：32,570.14公頃<br>
+                        資源特色：隆起高位珊瑚礁地形、珊瑚生態系、熱帶動植物生態、過境候鳥棲息地、先民文化遺跡。
+                      </p>
+                      <a href="./PHP/calendar5.php" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/20200917185611616637714.jpg" class="card-img-top" alt="玉山國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">玉山國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國74年4月<br>
+                        涵蓋面積：103,121.4公頃<br>
+                        資源特色：臺灣第一高峰─玉山、豐富多樣的高山生態景觀、原住民文化及八通關古道等人文古蹟。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/images33.jpg" class="card-img-top" alt="陽明山國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">陽明山國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國74年9月<br>
+                        涵蓋面積：11,338公頃<br>
+                        資源特色：位於臺灣北部大屯火山群的核心地區，以獨特的火山地質與地形景觀著稱。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/4e10040620182315.jpg" class="card-img-top" alt="太魯閣國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">太魯閣國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國75年11月<br>
+                        涵蓋面積：92,000公頃<br>
+                        資源特色：大理岩峽谷景觀、高山地形、豐富的動植物生態及史前遺址與太魯閣族人文史蹟。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/1124994_806255.jpg" class="card-img-top" alt="雪霸國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">雪霸國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國81年7月<br>
+                        涵蓋面積：76,547.08公頃<br>
+                        資源特色：獨特地形地質景觀、珍稀保育動植物、先民遺址及原住民 （泰雅族、賽夏族）人文史蹟。</p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/金門.jpg" class="card-img-top" alt="金門國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">金門國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國84年10月<br>
+                        涵蓋面積：3,528.74公頃<br>
+                        資源特色：豐富的歷史文化，戰役史蹟，歷史古蹟與傳統建築，以及自然人文資源。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="/image/Pratas_Island_ISS004-10210.jpg" class="card-img-top" alt="東沙環礁國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">東沙環礁國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國96年1月<br>
+                        涵蓋面積：353,667.95公頃<br>
+                        資源特色：熱帶海域，具生物多樣性高的海草床、珊瑚礁潟湖生態系及完整獨特的珊瑚環礁地形。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/1499949556-5cddcdea64be9ef9e0ed476595a6f387.jpg" class="card-img-top"
+                      alt="台江國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">台江國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國98年10月<br>
+                        涵蓋面積：40,731.31公頃<br>
+                        資源特色：墾拓歷史，江海濕地自然生態，候（水）鳥及紅樹林等豐沛珍貴野生動植物資源。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/3995514_1_1.jpg" class="card-img-top" alt="澎湖南方四島國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">澎湖南方四島公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國103年6月<br>
+                        涵蓋面積：35,843.62公頃<br>
+                        資源特色：具有成為世界遺產的玄武岩地質，珍貴珊瑚礁生態系與獨特梯田式菜宅人文地景等資源。</p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/1158x768_20201231000155.jpg" class="card-img-top" alt="壽山國家自然公園">
+                    <div class="card-body">
+                      <h5 class="card-title">壽山國家自然公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國100年11月<br>
+                        涵蓋面積：1,131.19公頃<br>
+                        資源特色：珊瑚礁石灰岩生態、史前貝塚遺跡、人文歷史古蹟及臺灣獼猴等豐富自然資源。</p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="row mt-3 mb-5">
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/10092480174e29400327929.jpg" class="card-img-top" alt="墾丁國家公園燈塔">
+                    <div class="card-body">
+                      <h4 class="card-title ">墾丁國家公園</h4>
+                      <p class="card-text text-start">
+                        墾丁國家公園三面環海，地形景觀多樣面貌，潔白砂灘、蔚藍大海、嶙峋珊瑚礁岩；盛夏豔陽雖然炙熱，因戲水、衝浪、風帆、浮潛等海上活動，每年吸引眾多遊客至此享受海天一色的悠閒。每逢夏秋月圓時節，香蕉灣、港口的陸蟹媽媽抱卵橫越道路至海邊釋幼，歷經多年宣導，「蟹謝讓路」活動已蔚為風潮，展現人與自然共存共榮的生命之愛。<br>
+                        秋冬時分，落山風間歇吹奏，金黃大地及瀲艷的欖仁葉，紅尾伯勞鳥是先遣部隊，緊接在後是盤旋天際的鷹群，這場「風起鷹揚」譜出南國最美麗的秋歌。壓軸出場的南遷雁鴨齊聚龍鑾潭，劃下年終完美句點。四季皆美的墾丁國家公園還有薈萃的人文丰采，園區內發現多處史前遺址、原住民文化遺跡、神秘的軍事坑道…...。墾丁始終以多采的樣貌歡迎旅人悠遊其間。
+                      </p>
+                      <a href="./PHP/calendar5.php" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/20200917185611616637714.jpg" class="card-img-top" alt="玉山國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">玉山國家公園</h5>
+                      <p class="card-text text-start">
+                        玉山國家公園內群峰相連，面積橫跨十萬餘公頃，從臺灣最高峰，海拔3,952公尺的玉山主峰，到海拔300公尺的拉庫拉庫溪谷，地形奇特峻峭，林相縱躍高低海拔，因而孕育出豐富的自然生態，並有著數量繁茂的野生物種。園區除了是多種原生中大型哺乳類動物的生活天地，更是臺灣森林生態系的關鍵物種、也是瀕危的保育類臺灣黑熊最主要的棲息環境。<br>
+                        而純樸豐厚的布農原住民文化及見證島嶼東西部橫越開發的歷史古道，皆具體呈現出歲月流長與意境悠遠的人文底蘊。得天獨厚的地理環境，造就許多優美景緻；不論高山、深谷、雲海、幽溪，皆值得世人親入其中，坐看雲起、滌心逐塵，徜徉享受那連雲疊嶂，且時而雲霧繚繞的風景變幻。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/images33.jpg" class="card-img-top" alt="陽明山國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">陽明山國家公園</h5>
+                      <p class="card-text text-start">
+                        陽明山國家公園以特有的火山地形地貌著稱，園區內變化多端的氣候景觀、四季轉換的植被特性、豐富多樣的動植物生態與獨一無二的人文歷史，益加使她風情萬種。<br>
+                        初春，杜鵑、山櫻花及楓香嫩綠的新芽，將山色妝扮得繽紛亮麗。夏季，霧雨初晴後，擎天崗的草原瀰漫著青草的芳香。秋季，大屯山、七星山至擎天崗一帶的芒草隨風搖曳，並綻放紅色花穗，交織成一幅盛名遠播的「大屯秋色」。歲末寒冬時，受東北季風影響，山區經常寒風細雨紛飛、雲霧繚繞，別有一番詩意。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/4e10040620182315.jpg" class="card-img-top" alt="太魯閣國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">太魯閣國家公園</h5>
+                      <p class="card-text text-start">
+                        山海交錯的太魯閣國家公園，位於臺灣東部，東臨太平洋，西接脊樑山脈。高山峽谷是太魯閣國家公園名聞世界的地形景觀，全區名列「臺灣百岳」者即有27座之多。數百萬年來，這塊臺灣地質史上最古老的大理岩層經立霧溪不斷切割、地殼隆起上升，太魯閣峽谷處處可見歲月和板塊運動所遺留的痕跡，可謂「集天地大美，得山水清趣」。<br>
+                        多樣的動植物生態、豐富的人文史蹟，以及雲海及雪景等景觀，益加增添太魯閣獨特非凡的魅力。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/1124994_806255.jpg" class="card-img-top" alt="雪霸國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">雪霸國家公園</h5>
+                      <p class="card-text text-start">
+                        雪霸國家公園屬於山岳型國家公園，境內高峰連綿，地形富於變化，如雪山圈谷、大霸群峰、布秀蘭斷崖、品田山褶皺等，鬼斧神工的景緻，令人讚嘆！加上臺灣檫樹等冰河時期孑遺的稀有植物，以及臺灣櫻花鉤吻鮭、寬尾鳳蝶及觀霧山椒魚等珍稀保育類動物，增添動人魅力。<br>
+                        園區共有3處遊憩區；西北隅的觀霧，終年雲霧繚繞，日出日落金黃展媚，鳳仙花與秋螢以清新邀約；武陵，位於東南入口，秋天是臺灣櫻花鉤吻鮭繁殖與楓葉浪漫的季節；坐落於西隅的雪見，是未經太多開發破壞的處所，林相交雜完整，提供野生動物適切的棲息及活動環境，此處具有豐富薈萃的人文史蹟資源，其原住民文化主要為泰雅族北勢群，鄰近的象鼻、梅園、天狗部落仍保存了傳統的泰雅原鄉文化，純樸而自然。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/金門.jpg" class="card-img-top" alt="金門國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">金門國家公園</h5>
+                      <p class="card-text text-start">
+                        由於開發早、歷史文化源遠流長，人文史蹟豐富，歷史古蹟與傳統建築構築了金門深厚的文化內涵。此處傳統建築文化與風土民情多沿襲閩廈古風；在歐厝、珠山、水頭、瓊林、山后、南北山等代表性的傳統聚落中，除傳統的閩南建築外，也有「洋樓建築」，均具有極高的藝術性，也道出了先民遷徙此地的歷史歲月。因地理位置特殊，金門成為保障臺澎安全的第一道防線；多次的慘烈戰役亦使金門充滿了戰地風情，有別於其他國家公園的自然風貌。<br>
+                        加上金門因位於大陸邊緣，且是候鳥遷徙的中繼站，故鳥類資源豐富。目前已被發現紀錄的鳥種共計有三百餘種，其中以候鳥居多。金門的鳥種與臺灣地區的鳥類有顯著的不同，栗喉蜂虎、鵲鴝、斑翡翠、戴勝、玉頸鴉、羅紋鴨等即是臺灣難得一見的鳥種。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="/image/Pratas_Island_ISS004-10210.jpg" class="card-img-top" alt="東沙環礁國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">東沙環礁國家公園</h5>
+                      <p class="card-text text-start">
+                        東沙環礁國家公園位於南海北部，是由珊瑚經千萬年的生長堆積而形成，屬於特殊珍貴自然景觀，足以代表國家自然遺產。東沙環礁孕育豐富的珊瑚礁生物，以桌形和分枝形軸孔珊瑚為主，園區內廣大的珊瑚礁海域，提供海洋生物繁衍與棲息場所，生物多樣性高，是海洋生物資源寶庫。東沙島位於環礁西側，形狀像螃蟹大前螯，由珊瑚與貝殼碎屑堆積而成，島嶼地勢低平，遍布熱帶灌叢多由海漂植物組成，是候鳥遷移的中繼站。<br>
+                        東沙環礁國家公園為我國第一座以保育海洋環境為核心而設立的國家公園，為深化東沙海洋研究能量與國際能見度，東沙島建置「東沙海洋研究中心」未來將肩負起南海保育研究的任務。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/1499949556-5cddcdea64be9ef9e0ed476595a6f387.jpg" class="card-img-top"
+                      alt="台江國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">台江國家公園</h5>
+                      <p class="card-text text-start">
+                        台江國家公園以保育自然生態資源、保存歷史文化與漁鹽業襲產為核心主體，園區內有先民勇渡黑水溝來臺墾拓的古航道，曾是世界航海經貿重要的脈絡場域，更是漢民立足發跡臺灣的起始。台江內海歷經曾文溪改道與多重演替等地景變遷，保存著幅員廣袤之濕地，孕育豐沛多樣之生態資源，除有大量紅樹林分佈其中，亦是許多鳥類、招潮蟹及彈塗魚等重要棲息地，每年冬季更吸引大量黑面琵鷺等珍稀候（水）鳥乘風南返至四草與七股地區度冬。<br>
+                        台江沿海環境氣候適宜長期作為鹽田與魚塭等使用，形成特殊的養殖產業文化，使得台江國家公園不僅擁有昔日臺灣移墾歷史之獨特文化資產，更具備國際級濕地的重要生態資源景觀，再加上漁業、曬鹽等具經濟與觀光價值產業的豐厚人文氣息，同時兼具「歷史」、「自然」、「產業」三大資源特色，開啟第二代國家公園新頁。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/3995514_1_1.jpg" class="card-img-top" alt="澎湖南方四島國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">澎湖南方四島公園</h5>
+                      <p class="card-text text-start">
+                        澎湖南方四島（包括東、西吉嶼、東西嶼坪嶼及周邊島礁）保存了中新世紀臺灣海峽玄武岩火山活動最後噴發的地質紀錄，具備玄武岩地形之多樣性與海蝕地形的完整性，園區內生物多樣且豐富，為臺灣海峽重要的燕鷗繁殖區，珊瑚礁生態系是臺灣珊瑚礁健康狀況最佳區域，也是澎湖周邊海域海洋生態之種原庫。<br>
+                        南方四島保存清代傳統合院建築與日治時期之洋樓建築特色、聚落發展之空間層次及獨特之梯田式菜宅人文地景等特色，未來將積極投入規劃澎湖南方四島國家公園成為完善之生態旅遊與環境教育場域。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/1158x768_20201231000155.jpg" class="card-img-top" alt="壽山國家自然公園">
+                    <div class="card-body">
+                      <h5 class="card-title">壽山國家自然公園</h5>
+                      <p class="card-text text-start">
+                        壽山國家自然公園為我國首座國家自然公園，位於高雄市的西南側，園區包括半屏山、大小龜山、壽山及旗後山四大區域，從北而南構築了一條綠色生態廊道。<br>
+                        園區內多屬於隆起的高位珊瑚礁石灰岩地形，不僅孕育了獨特的生態，如全臺面積最大且密度最高的山豬枷植群，還有著名的臺灣特有種－臺灣獼猴等，特殊的地質也成為臺灣西南沿岸地殼抬升的見證。而在人文歷史方面，從史前時代的貝塚考古遺址、明鄭、清領及日治各個時期開發遺留下來的史蹟，就像是高雄發展的濃縮歷史，訴說打狗豐富多樣的故事。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="row mt-3 mb-5">
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/4817089343_84440838b2_b.jpg" class="card-img-top" alt="墾丁國家公園">
+                    <div class="card-body">
+                      <h4 class="card-title ">墾丁國家公園</h4>
+                      <p class="card-text text-start">
+                        成立時間：民國71年9月<br>
+                        涵蓋面積：32,570.14公頃<br>
+                        資源特色：隆起高位珊瑚礁地形、珊瑚生態系、熱帶動植物生態、過境候鳥棲息地、先民文化遺跡。
+                      </p>
+                      <a href="./PHP/calendar5.php" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/20200917185611616637714.jpg" class="card-img-top" alt="玉山國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">玉山國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國74年4月<br>
+                        涵蓋面積：103,121.4公頃<br>
+                        資源特色：臺灣第一高峰─玉山、豐富多樣的高山生態景觀、原住民文化及八通關古道等人文古蹟。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/images33.jpg" class="card-img-top" alt="陽明山國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">陽明山國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國74年9月<br>
+                        涵蓋面積：11,338公頃<br>
+                        資源特色：位於臺灣北部大屯火山群的核心地區，以獨特的火山地質與地形景觀著稱。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/4e10040620182315.jpg" class="card-img-top" alt="太魯閣國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">太魯閣國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國75年11月<br>
+                        涵蓋面積：92,000公頃<br>
+                        資源特色：大理岩峽谷景觀、高山地形、豐富的動植物生態及史前遺址與太魯閣族人文史蹟。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/1124994_806255.jpg" class="card-img-top" alt="雪霸國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">雪霸國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國81年7月<br>
+                        涵蓋面積：76,547.08公頃<br>
+                        資源特色：獨特地形地質景觀、珍稀保育動植物、先民遺址及原住民 （泰雅族、賽夏族）人文史蹟。</p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-1 mb-3">
+                  <div class="card mx-auto border-0"></div>
+                </div>
+
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/金門.jpg" class="card-img-top" alt="金門國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">金門國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國84年10月<br>
+                        涵蓋面積：3,528.74公頃<br>
+                        資源特色：豐富的歷史文化，戰役史蹟，歷史古蹟與傳統建築，以及自然人文資源。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="/image/Pratas_Island_ISS004-10210.jpg" class="card-img-top" alt="東沙環礁國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">東沙環礁國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國96年1月<br>
+                        涵蓋面積：353,667.95公頃<br>
+                        資源特色：熱帶海域，具生物多樣性高的海草床、珊瑚礁潟湖生態系及完整獨特的珊瑚環礁地形。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class=" card"> -->
+                    <img src="./image/1499949556-5cddcdea64be9ef9e0ed476595a6f387.jpg" class="card-img-top"
+                      alt="台江國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">台江國家公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國98年10月<br>
+                        涵蓋面積：40,731.31公頃<br>
+                        資源特色：墾拓歷史，江海濕地自然生態，候（水）鳥及紅樹林等豐沛珍貴野生動植物資源。
+                      </p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/3995514_1_1.jpg" class="card-img-top" alt="澎湖南方四島國家公園">
+                    <div class="card-body">
+                      <h5 class="card-title">澎湖南方四島公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國103年6月<br>
+                        涵蓋面積：35,843.62公頃<br>
+                        資源特色：具有成為世界遺產的玄武岩地質，珍貴珊瑚礁生態系與獨特梯田式菜宅人文地景等資源。</p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2 mb-3">
+                  <div class="card mx-auto">
+                    <!-- <div class="card"> -->
+                    <img src="./image/1158x768_20201231000155.jpg" class="card-img-top" alt="壽山國家自然公園">
+                    <div class="card-body">
+                      <h5 class="card-title">壽山國家自然公園</h5>
+                      <p class="card-text text-start">
+                        成立時間：民國100年11月<br>
+                        涵蓋面積：1,131.19公頃<br>
+                        資源特色：珊瑚礁石灰岩生態、史前貝塚遺跡、人文歷史古蹟及臺灣獼猴等豐富自然資源。</p>
+                      <a href="#" class="btn btn-primary">確認</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="col-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./image/Featured-photo-Kenting-itinerary-Taiwan.jpg" class="d-block w-100 h-25" alt="...">
+              <!-- <img src="https://picsum.photos/id/1003/200/310" class="d-block w-100" alt="..."> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>墾丁國家公園</h5>
+                <p>Please read articles in our website for more information about accommodation in Kenting National
+                  Park.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./image/pic1.jpg" class="d-block w-100 h-25" alt="...">
+              <!-- <img src="https://picsum.photos/id/1004/200/310" class="d-block w-100" alt="..."> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>太魯閣國家公園</h5>
+                <p>Please read articles in our website for more information about accommodation in Taroko National Park.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./image/article-5e90128fbd45c1.jpg" class="d-block w-100" alt="...">
+              <!-- <img src="https://picsum.photos/id/1005/200/310" class="d-block w-100" alt="..."> -->
+              <div class="carousel-caption d-none d-md-block">
+                <h5>東沙環礁國家公園</h5>
+                <p>Please read articles in our website for more information about accommodation in Dongsha National
+                  Park.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="./image/cover_fb1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>台江國家公園</h5>
+                <p>Please read articles in our website for more information about accommodation in Taijiang National
+                  Park.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./image/Image-301.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>金門國家公園</h5>
+                <p>Please read articles in our website for more information about accommodation in Kinmen National Park.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./image/spmnp1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>澎湖南方四島國家公園</h5>
+                <p>Please read articles in our website for more information about accommodation in South Penhu National
+                  Park.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid my-4">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AzO4XdpHCek?start=4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+          <br>
+
+
+        </div>
+        <div class="col-sm-4">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/LiTwTz-0POw?start=4"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-4 ">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CDCpz_70XBU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
